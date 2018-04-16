@@ -11,6 +11,8 @@ module ErrorHandler
           else
             raise Bonita::AuthError
           end
+        when 404
+          raise Bonita::ResourceNotFoundError
         else
           raise Bonita::Error.new(response.status, response.body)
         end

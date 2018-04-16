@@ -17,6 +17,7 @@ require 'bonita/error_handler'
 # Models
 require 'bonita/models/base_model'
 require 'bonita/models/bpm/process'
+require 'bonita/models/bpm/case_variable'
 require 'bonita/models/customuserinfo/definition'
 require 'bonita/models/customuserinfo/value'
 require 'bonita/models/customuserinfo/user'
@@ -27,6 +28,7 @@ require 'bonita/models/identity/membership'
 
 # JSON Maps
 require 'bonita/mappings/bpm/process_mapping'
+require 'bonita/mappings/bpm/case_variable_mapping'
 require 'bonita/mappings/customuserinfo/definition_mapping'
 require 'bonita/mappings/customuserinfo/value_mapping'
 require 'bonita/mappings/customuserinfo/user_mapping'
@@ -37,6 +39,7 @@ require 'bonita/mappings/identity/membership_mapping'
 
 # Resources
 require 'bonita/resources/bpm/process_resource'
+require 'bonita/resources/bpm/case_variable_resource'
 require 'bonita/resources/customuserinfo/definition_resource'
 require 'bonita/resources/customuserinfo/value_resource'
 require 'bonita/resources/customuserinfo/user_resource'

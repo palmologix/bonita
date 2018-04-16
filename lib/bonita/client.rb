@@ -13,6 +13,7 @@ module Bonita
           },
           bpm: {
             processes: Bpm::ProcessResource,
+            case_variables: Bpm::CaseVariableResource,
           },
           identity: {
             groups: Identity::GroupResource,

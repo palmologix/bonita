@@ -19,7 +19,8 @@ module Bonita
     end
   end
 
-  AuthError         = Class.new(StandardError)
-  UnauthorizedError = Class.new(StandardError)
-  ForbiddenError    = Class.new(StandardError)
+  AuthError                     = Class.new(StandardError)
+  UnauthorizedError             = Class.new(StandardError)
+  ForbiddenError                = Class.new(StandardError)
+  ResourceNotFoundError         = Class.new(StandardError)
 end
