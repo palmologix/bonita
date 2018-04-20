@@ -16,7 +16,7 @@ module Bonita
           path 'bonita/API/bpm/caseVariable/:caseId/:variableName'
           verb :put
           body { |object| Bonita::Utils::UpdateHandler.new(object, CaseVariableMapping).call }
-          handler(200) { |response| ProcessMapping.extract_single(response.body, :read) }
+          handler(200) { |response| CaseVariableMapping.extract_single(response.body, :read) }
         end
       end
     end
