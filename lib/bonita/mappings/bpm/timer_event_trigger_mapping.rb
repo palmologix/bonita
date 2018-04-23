@@ -13,6 +13,10 @@ module Bonita
           property :executionDate
           property :eventInstanceName
         end
+
+        scoped :update do
+          property :executionDate
+        end
       end
     end
   end

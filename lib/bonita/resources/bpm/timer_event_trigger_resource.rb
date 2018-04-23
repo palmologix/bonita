@@ -14,9 +14,9 @@ module Bonita
         end
 
         action :update do
-          path 'bonita/API/bpm/timerEventTrigger/:id'
+          path 'bonita/API/bpm/timerEventTrigger/:timerEventTriggerID'
           verb :put
-          body { |object| Bonita::Utils::UpdateHandler.new(object, TimerEventTriggerMapping).call }
+          body { |object| Bonita::Utils::UpdateHandler.new(object.tap { |hs| hs.delete(:timerEventTriggerID) }, TimerEventTriggerMapping).call }
           handler(200) { |response| TimerEventTriggerMapping.extract_single(response.body, :read) }
         end
       end
