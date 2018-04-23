@@ -8,13 +8,13 @@ module Bonita
         mapping Case
 
         scoped :read do
-          attribute :id
-          attribute :start
-          attribute :started_by
-          attribute :end_date
-          attribute :state
-          attribute :activeFlowNodes
-          attribute :failedFlowNodes
+          property :id
+          property :start
+          property :started_by
+          property :end_date
+          property :state
+          property :activeFlowNodes
+          property :failedFlowNodes
         end
       end
     end
